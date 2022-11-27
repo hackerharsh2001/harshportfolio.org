@@ -243,7 +243,7 @@ https://www.tooplate.com/view/2115-marvel
             <div class="contact-form">
               <h2 class="mb-4">Let's talk</h2>
 
-              <form action="" method="get" onsubmit="sendEmail(); reset(); return false;">
+              <form action="" method="get">
                 <div class="row">
                   <div class="col-lg-6 col-12">
                     <input type="text" class="form-control" name="name" placeholder="Your Name" id="name">
@@ -292,22 +292,6 @@ https://www.tooplate.com/view/2115-marvel
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail(){
-           Email.send({
-             Host : "smtp.gmail.com",
-             Username : "181210107030@aiet.edu.in",
-             Password : "patelharsh1112001@gmail.com",
-             To : 'patelharsh1112001@gmail.com',
-             From : document.getElementById("email").value,
-             Subject : "New Contact Form Enquiry",
-             Body : "And this is the body"
-        }).then(
-          message => alert("Message Sent Succesfully")
-        );
-        }
-    </script>
 
   </body>
 </html>
